@@ -6,7 +6,8 @@ public class myPlaneTester : MonoBehaviour {
     public Transform v1, v2, v3;
     public Transform target;
     void Start () {
-
+        var m = new int[, ] { { 1, -2, 1, -4 }, { 0, 1, 2, 4 }, { 2, 3, -2, 2 } };
+        MatrixMath.Matrix.SolveMatrix (m);
     }
 
     void Update () {
